@@ -29,7 +29,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-card shadow-sm border-b border-border sticky top-0 z-50">
+    <header className="bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-200 sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/">
@@ -38,8 +38,8 @@ export default function Header() {
                 <Car className="text-primary-foreground" size={20} />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground">ЭкоДизель-Сервис</h1>
-                <p className="text-sm text-muted-foreground">Профессиональная чистка DPF</p>
+                <h1 className="text-xl font-bold text-gray-900">ЭкоДизель-Сервис</h1>
+                <p className="text-sm text-gray-600">Профессиональная чистка DPF</p>
               </div>
             </div>
           </Link>
@@ -48,8 +48,8 @@ export default function Header() {
             {navigation.map((item) => (
               <Link key={item.href} href={item.href}>
                 <span 
-                  className={`text-foreground hover:text-primary transition-colors cursor-pointer ${
-                    location === item.href ? 'text-primary font-medium' : ''
+                  className={`text-gray-700 hover:text-blue-600 transition-colors cursor-pointer font-medium px-3 py-2 rounded-md hover:bg-blue-50 ${
+                    location === item.href ? 'text-blue-600 bg-blue-50 font-semibold' : ''
                   }`}
                   data-testid={`nav-${item.label.toLowerCase()}`}
                 >
@@ -61,10 +61,10 @@ export default function Header() {
           
           <div className="flex items-center space-x-4">
             <div className="text-right hidden sm:block">
-              <p className="text-sm text-muted-foreground">Звоните сейчас</p>
+              <p className="text-sm text-gray-600">Звоните сейчас</p>
               <a 
                 href="tel:+375152123456" 
-                className="text-lg font-semibold text-primary hover:text-primary/80"
+                className="text-lg font-bold text-blue-600 hover:text-blue-700"
                 onClick={handlePhoneClick}
                 data-testid="header-phone"
               >
@@ -72,7 +72,7 @@ export default function Header() {
               </a>
             </div>
             <Button 
-              className="bg-accent text-accent-foreground hover:bg-accent/90 hidden sm:inline-flex"
+              className="bg-orange-500 text-white hover:bg-orange-600 font-medium px-6 py-2 hidden sm:inline-flex"
               onClick={handleCallbackClick}
               data-testid="button-callback"
             >
@@ -86,12 +86,16 @@ export default function Header() {
                   <Menu size={20} />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px]">
+              <SheetContent side="right" className="w-[300px] bg-white">
                 <div className="flex flex-col space-y-6 mt-6">
                   {navigation.map((item) => (
                     <Link key={item.href} href={item.href}>
                       <span 
-                        className={`text-lg cursor-pointer ${location === item.href ? 'text-primary font-medium' : 'text-foreground'}`}
+                        className={`text-lg cursor-pointer font-medium px-3 py-2 rounded-md transition-colors ${
+                          location === item.href 
+                            ? 'text-blue-600 bg-blue-50 font-semibold' 
+                            : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                        }`}
                         onClick={() => setIsOpen(false)}
                         data-testid={`mobile-nav-${item.label.toLowerCase()}`}
                       >
@@ -102,7 +106,7 @@ export default function Header() {
                   <div className="pt-6 border-t">
                     <a 
                       href="tel:+375152123456" 
-                      className="flex items-center space-x-3 text-primary font-semibold text-lg"
+                      className="flex items-center space-x-3 text-blue-600 font-bold text-lg hover:text-blue-700"
                       onClick={handlePhoneClick}
                       data-testid="mobile-phone"
                     >

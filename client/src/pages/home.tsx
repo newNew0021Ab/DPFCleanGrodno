@@ -9,9 +9,10 @@ import Footer from "@/components/layout/footer";
 import Hero from "@/components/sections/hero";
 import QuickContact from "@/components/sections/quick-contact";
 import { trackEvent } from "@/lib/analytics";
+import { Testimonial } from "@/../../shared/schema";
 
 export default function Home() {
-  const { data: testimonials } = useQuery({
+  const { data: testimonials } = useQuery<Testimonial[]>({
     queryKey: ['/api/testimonials'],
   });
 
