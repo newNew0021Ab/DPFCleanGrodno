@@ -47,14 +47,14 @@ export default function Header() {
           <nav className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
               <Link key={item.href} href={item.href}>
-                <a 
-                  className={`text-foreground hover:text-primary transition-colors ${
+                <span 
+                  className={`text-foreground hover:text-primary transition-colors cursor-pointer ${
                     location === item.href ? 'text-primary font-medium' : ''
                   }`}
                   data-testid={`nav-${item.label.toLowerCase()}`}
                 >
                   {item.label}
-                </a>
+                </span>
               </Link>
             ))}
           </nav>
@@ -90,13 +90,13 @@ export default function Header() {
                 <div className="flex flex-col space-y-6 mt-6">
                   {navigation.map((item) => (
                     <Link key={item.href} href={item.href}>
-                      <a 
-                        className={`text-lg ${location === item.href ? 'text-primary font-medium' : 'text-foreground'}`}
+                      <span 
+                        className={`text-lg cursor-pointer ${location === item.href ? 'text-primary font-medium' : 'text-foreground'}`}
                         onClick={() => setIsOpen(false)}
                         data-testid={`mobile-nav-${item.label.toLowerCase()}`}
                       >
                         {item.label}
-                      </a>
+                      </span>
                     </Link>
                   ))}
                   <div className="pt-6 border-t">

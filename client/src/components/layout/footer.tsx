@@ -59,37 +59,37 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/services">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-services">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-services">
                     Чистка DPF фильтров
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-diagnostics">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-diagnostics">
                     Диагностика систем
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-fleet">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-fleet">
                     Обслуживание автопарков
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-mobile">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-mobile">
                     Выездное обслуживание
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-regen">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-regen">
                     Принудительная регенерация
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>
@@ -101,37 +101,37 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/about">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-about">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-about">
                     О компании
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-equipment">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-equipment">
                     Наше оборудование
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-warranty">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-warranty">
                     Гарантии
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-certificates">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-certificates">
                     Сертификаты
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/blog">
-                  <a className="text-background/80 hover:text-background transition-colors" data-testid="footer-link-blog">
+                  <span className="text-background/80 hover:text-background transition-colors cursor-pointer" data-testid="footer-link-blog">
                     Статьи и советы
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>
@@ -185,9 +185,9 @@ export default function Footer() {
           <p className="text-background/60">
             © 2024 ЭкоДизель-Сервис. Все права защищены. 
             <Link href="/privacy">
-              <a className="hover:text-background transition-colors ml-2" data-testid="link-privacy">
+              <span className="hover:text-background transition-colors ml-2 cursor-pointer" data-testid="link-privacy">
                 Политика конфиденциальности
-              </a>
+              </span>
             </Link>
           </p>
         </div>
@@ -204,6 +204,6 @@ export default function Footer() {
           <Phone size={24} />
         </a>
       </div>
-    </header>
+    </footer>
   );
 }

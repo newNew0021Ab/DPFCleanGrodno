@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -11,11 +12,12 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import Hero from "@/components/sections/hero";
 import { trackEvent } from "@/lib/analytics";
+import { Testimonial } from "@/../../shared/schema";
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const { data: testimonials } = useQuery({
+  const { data: testimonials } = useQuery<Testimonial[]>({
     queryKey: ['/api/testimonials'],
   });
 
@@ -184,7 +186,7 @@ export default function Gallery() {
                 </Dialog>
               ))}
             </div>
-          </div>
+          </Tabs>
         </div>
       </section>
 
