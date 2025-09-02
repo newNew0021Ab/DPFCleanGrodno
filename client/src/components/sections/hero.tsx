@@ -19,52 +19,54 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
   };
 
   return (
-    <section className="hero-gradient py-20 text-white relative overflow-hidden">
+    <section className="hero-gradient py-12 md:py-20 text-white relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 md:mb-6">
               {title}
             </h1>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-lg md:text-xl mb-6 md:mb-8 text-blue-100">
               {subtitle}
             </p>
             
             {showCTA && (
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
                 <Button 
-                  className="bg-accent text-accent-foreground px-8 py-4 text-lg font-semibold hover:bg-accent/90 h-auto"
+                  className="bg-accent text-accent-foreground px-4 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold hover:bg-accent/90 h-auto"
                   onClick={handleCalculatorClick}
                   data-testid="button-calculator"
                 >
-                  <Calculator className="mr-2" size={20} />
-                  Рассчитать стоимость
+                  <Calculator className="mr-2" size={18} />
+                  <span className="hidden sm:inline">Рассчитать стоимость</span>
+                  <span className="sm:hidden">Расчет</span>
                 </Button>
                 <Button 
                   variant="outline"
-                  className="bg-white/10 text-white border-white/20 px-8 py-4 text-lg font-semibold hover:bg-white/20 h-auto"
+                  className="bg-white/10 text-white border-white/20 px-4 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold hover:bg-white/20 h-auto"
                   onClick={handleConsultationClick}
                   data-testid="button-consultation"
                 >
-                  <Phone className="mr-2" size={20} />
-                  Получить консультацию
+                  <Phone className="mr-2" size={18} />
+                  <span className="hidden sm:inline">Получить консультацию</span>
+                  <span className="sm:hidden">Консультация</span>
                 </Button>
               </div>
             )}
             
             {showStats && (
-              <div className="grid grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-3 gap-3 md:gap-6 text-center">
                 <div data-testid="stat-filters">
-                  <div className="text-3xl font-bold text-accent">500+</div>
-                  <div className="text-sm text-blue-100">Очищенных фильтров</div>
+                  <div className="text-xl md:text-3xl font-bold text-accent">500+</div>
+                  <div className="text-xs md:text-sm text-blue-100">Очищенных фильтров</div>
                 </div>
                 <div data-testid="stat-restoration">
-                  <div className="text-3xl font-bold text-accent">98%</div>
-                  <div className="text-sm text-blue-100">Восстановление</div>
+                  <div className="text-xl md:text-3xl font-bold text-accent">98%</div>
+                  <div className="text-xs md:text-sm text-blue-100">Восстановление</div>
                 </div>
                 <div data-testid="stat-warranty">
-                  <div className="text-3xl font-bold text-accent">12</div>
-                  <div className="text-sm text-blue-100">Месяцев гарантии</div>
+                  <div className="text-xl md:text-3xl font-bold text-accent">12</div>
+                  <div className="text-xs md:text-sm text-blue-100">Месяцев гарантии</div>
                 </div>
               </div>
             )}
@@ -78,10 +80,10 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
               data-testid="hero-image"
             />
             
-            <div className="absolute -bottom-6 -left-6 bg-card text-foreground p-4 rounded-xl shadow-lg">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                  <CheckCircle className="text-white" size={20} />
+            <div className="absolute -bottom-3 md:-bottom-6 -left-3 md:-left-6 bg-card text-foreground p-3 md:p-4 rounded-xl shadow-lg">
+              <div className="flex items-center space-x-2 md:space-x-3">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-full flex items-center justify-center">
+                  <CheckCircle className="text-white" size={16} />
                 </div>
                 <div>
                   <p className="font-semibold">Работаем в Гродно</p>

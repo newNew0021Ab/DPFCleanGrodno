@@ -44,16 +44,16 @@ export default function Home() {
       <QuickContact />
 
       {/* Services Preview */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-12 md:py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Наши услуги</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Наши услуги</h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Полный спектр услуг по обслуживанию систем очистки выхлопных газов
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Service Card 1 */}
             <Card className="service-card border border-border">
               <CardContent className="p-8">
@@ -169,16 +169,16 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Почему выбирают нас</h2>
-            <p className="text-xl text-muted-foreground">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Почему выбирают нас</h2>
+            <p className="text-lg md:text-xl text-muted-foreground px-4">
               Преимущества работы с ЭкоДизель-Сервис
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="text-primary" size={32} />
