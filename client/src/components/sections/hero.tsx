@@ -19,44 +19,44 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
   };
 
   return (
-    <section className="hero-gradient py-20 text-white relative overflow-hidden">
+    <section className="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 py-24 text-white relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-8 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
               {title}
             </h1>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-10 text-blue-50 font-light">
               {subtitle}
             </p>
             
             {showCTA && (
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button 
-                  className="bg-accent text-accent-foreground px-8 py-4 text-lg font-semibold hover:bg-accent/90 h-auto"
+                  className="bg-white text-blue-600 px-10 py-5 text-lg font-bold hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-xl h-auto rounded-full"
                   onClick={handleCalculatorClick}
                   data-testid="button-calculator"
                 >
-                  <Calculator className="mr-2" size={20} />
+                  <Calculator className="mr-3" size={22} />
                   Рассчитать стоимость
                 </Button>
                 <Button 
                   variant="outline"
-                  className="bg-white/10 text-white border-white/20 px-8 py-4 text-lg font-semibold hover:bg-white/20 h-auto"
+                  className="bg-transparent text-white border-2 border-white/30 px-10 py-5 text-lg font-bold hover:bg-white/10 backdrop-blur-sm h-auto rounded-full transition-all duration-300 hover:scale-105"
                   onClick={handleConsultationClick}
                   data-testid="button-consultation"
                 >
-                  <Phone className="mr-2" size={20} />
+                  <Phone className="mr-3" size={22} />
                   Получить консультацию
                 </Button>
               </div>
             )}
             
             {showStats && (
-              <div className="grid grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-3 gap-8 text-center">
                 <div data-testid="stat-filters">
-                  <div className="text-3xl font-bold text-accent">500+</div>
-                  <div className="text-sm text-blue-100">Очищенных фильтров</div>
+                  <div className="text-4xl font-black bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">500+</div>
+                  <div className="text-sm text-blue-100 font-medium">Очищенных фильтров</div>
                 </div>
                 <div data-testid="stat-restoration">
                   <div className="text-3xl font-bold text-accent">98%</div>
