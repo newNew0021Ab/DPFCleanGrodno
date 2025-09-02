@@ -34,11 +34,35 @@ export default function PricingCalculator() {
     }
   };
 
-  const handleGetQuote = () => {
-    if (!phone.trim()) return;
+  const handleGetQuote = async () => {
+    if (!phone.trim() || !vehicleType) return;
     
-    trackEvent('quote_request', 'conversion', 'pricing_calculator');
-    // TODO: Submit quote request
+    try {
+      const response = await fetch('/api/quote', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          phone,
+          vehicleType,
+          carMake: carMake || '',
+          carModel: '',
+          description: `Запрос расчета стоимости через калькулятор. Тип ТС: ${vehicleTypes.find(v => v.value === vehicleType)?.label}`,
+        }),
+      });
+      
+      if (response.ok) {
+        trackEvent('quote_request_success', 'conversion', 'pricing_calculator');
+        alert('Запрос отправлен! Мы свяжемся с вами для точного расчета.');
+        setPhone('');
+      } else {
+        throw new Error('Ошибка отправки');
+      }
+    } catch (error) {
+      trackEvent('quote_request_error', 'error', 'pricing_calculator');
+      alert('Ошибка при отправке запроса. Попробуйте еще раз.');
+    }
   };
 
   return (

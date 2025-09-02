@@ -74,7 +74,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src="/attached_assets/generated_images/DPF_cleaning_equipment_station_2990d098.png" 
               alt="Профессиональное оборудование для чистки DPF фильтров" 
               className="rounded-2xl shadow-2xl w-full h-auto"
               data-testid="hero-image"
