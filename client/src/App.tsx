@@ -16,6 +16,7 @@ import Process from "@/pages/process";
 import About from "@/pages/about";
 import Gallery from "@/pages/gallery";
 import Contact from "@/pages/contact";
+import Blog from "@/pages/blog";
 
 function Router() {
   useAnalytics();
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/contact" component={Contact} />
+      <Route path="/blog" component={Blog} />
       <Route component={NotFound} />
     </Switch>
   );

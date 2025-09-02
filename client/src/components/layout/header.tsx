@@ -24,33 +24,32 @@ export default function Header() {
     { href: "/process", label: "Процесс" },
     { href: "/about", label: "О нас" },
     { href: "/gallery", label: "Галерея" },
+    { href: "/blog", label: "Блог" },
     { href: "/contact", label: "Контакты" },
   ];
 
   return (
-    <header className="bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <header className="bg-card shadow-sm border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           <Link href="/">
-            <div className="flex items-center space-x-4 cursor-pointer" data-testid="logo-link">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                <Car className="text-white" size={24} />
+            <div className="flex items-center space-x-3 cursor-pointer" data-testid="logo-link">
+              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                <Car className="text-primary-foreground" size={20} />
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">ЭкоДизель-Сервис</h1>
-                <p className="text-sm text-gray-600">Профессиональная чистка DPF</p>
+                <h1 className="text-xl font-bold text-foreground">ЭкоДизель-Сервис</h1>
+                <p className="text-sm text-muted-foreground">Профессиональная чистка DPF</p>
               </div>
             </div>
           </Link>
           
-          <nav className="hidden lg:flex items-center space-x-2">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
               <Link key={item.href} href={item.href}>
                 <span 
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer ${
-                    location === item.href 
-                      ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg transform scale-105' 
-                      : 'text-gray-700 hover:bg-gray-100 hover:text-blue-600'
+                  className={`text-foreground hover:text-primary transition-colors cursor-pointer ${
+                    location === item.href ? 'text-primary font-medium' : ''
                   }`}
                   data-testid={`nav-${item.label.toLowerCase()}`}
                 >
@@ -73,7 +72,7 @@ export default function Header() {
               </a>
             </div>
             <Button 
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 hidden sm:inline-flex rounded-full px-6"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 hidden sm:inline-flex"
               onClick={handleCallbackClick}
               data-testid="button-callback"
             >
