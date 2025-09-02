@@ -12,17 +12,17 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white py-20">
+    <footer className="bg-gray-800 text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
                 <Car className="text-white" size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">ЭкоДизель-Сервис</h3>
+                <h3 className="text-xl font-bold text-white">ЭкоДизель-Сервис</h3>
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -31,21 +31,21 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a 
                 href="viber://chat?number=+375152123456" 
-                className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center hover:bg-gray-600 transition-colors"
                 data-testid="link-viber"
               >
                 <i className="fab fa-viber text-background/80"></i>
               </a>
               <a 
                 href="https://t.me/ecodiezel_grodno" 
-                className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center hover:bg-gray-600 transition-colors"
                 data-testid="link-telegram"
               >
                 <i className="fab fa-telegram text-background/80"></i>
               </a>
               <a 
                 href="https://wa.me/375152123456" 
-                className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center hover:bg-gray-600 transition-colors"
                 data-testid="link-whatsapp"
               >
                 <i className="fab fa-whatsapp text-background/80"></i>

@@ -43,21 +43,21 @@ export default function Home() {
       <QuickContact />
 
       {/* Services Preview */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Наши услуги</h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Наши услуги</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Полный спектр услуг по обслуживанию систем очистки выхлопных газов
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service Card 1 */}
-            <Card className="service-card border border-border">
+            <Card className="hover:shadow-lg transition-shadow duration-300 border border-gray-200 bg-white">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                  <Filter className="text-primary" size={32} />
+                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                  <Filter className="text-blue-600" size={32} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">Чистка DPF фильтров</h3>
                 <p className="text-muted-foreground mb-6">
@@ -77,10 +77,10 @@ export default function Home() {
                     <span className="text-sm">12 месяцев гарантии</span>
                   </li>
                 </ul>
-                <div className="text-2xl font-bold text-primary mb-4" data-testid="price-dpf-cleaning">от 250 BYN</div>
+                <div className="text-2xl font-bold text-blue-600 mb-4" data-testid="price-dpf-cleaning">от 250 BYN</div>
                 <Link href="/services">
                   <Button 
-                    className="w-full"
+                    className="w-full bg-blue-600 text-white hover:bg-blue-700 transition-colors"
                     onClick={() => handleServiceClick('dpf_cleaning')}
                     data-testid="button-service-dpf"
                   >
@@ -91,7 +91,7 @@ export default function Home() {
             </Card>
 
             {/* Service Card 2 */}
-            <Card className="service-card border border-border">
+            <Card className="hover:shadow-lg transition-shadow duration-300 border border-gray-200 bg-white">
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
                   <Wrench className="text-accent" size={32} />
