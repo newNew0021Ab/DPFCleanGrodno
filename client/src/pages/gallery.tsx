@@ -28,7 +28,7 @@ export default function Gallery() {
   const galleryImages = [
     {
       id: 1,
-      src: "/attached_assets/generated_images/Mercedes_Sprinter_service_process_925c21ef.png",
+      src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       alt: "Результат очистки DPF фильтра Mercedes Sprinter",
       title: "Mercedes Sprinter",
       description: "Восстановление пропускной способности на 97%",
@@ -37,7 +37,7 @@ export default function Gallery() {
     },
     {
       id: 2,
-      src: "/attached_assets/generated_images/Mercedes_Sprinter_service_process_925c21ef.png",
+      src: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       alt: "Процесс очистки Volkswagen Crafter",
       title: "Volkswagen Crafter",
       description: "Полная очистка от сажи и золы",
@@ -46,7 +46,7 @@ export default function Gallery() {
     },
     {
       id: 3,
-      src: "/attached_assets/generated_images/MAN_truck_service_facility_be74212b.png",
+      src: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       alt: "Обслуживание грузовика MAN TGX",
       title: "MAN TGX",
       description: "Комплексное обслуживание грузового транспорта",
@@ -55,7 +55,7 @@ export default function Gallery() {
     },
     {
       id: 4,
-      src: "/attached_assets/generated_images/BMW_X5_DPF_system_6af53973.png",
+      src: "https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       alt: "Очистка DPF BMW X5",
       title: "BMW X5",
       description: "Профессиональная очистка легкового автомобиля",
@@ -64,7 +64,7 @@ export default function Gallery() {
     },
     {
       id: 5,
-      src: "/attached_assets/generated_images/Professional_service_team_working_a2354216.png",
+      src: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       alt: "Команда специалистов за работой",
       title: "Наша команда",
       description: "Профессиональные специалисты в работе",
@@ -73,7 +73,7 @@ export default function Gallery() {
     },
     {
       id: 6,
-      src: "/attached_assets/generated_images/DPF_cleaning_equipment_station_2990d098.png",
+      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       alt: "Современное оборудование для очистки",
       title: "Ультразвуковая установка",
       description: "Современное оборудование последнего поколения",

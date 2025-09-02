@@ -152,7 +152,7 @@ export default function About() {
             
             <div className="space-y-6">
               <img 
-                src="/attached_assets/generated_images/Professional_service_team_working_a2354216.png" 
+                src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
                 alt="Команда ЭкоДизель-Сервис" 
                 className="rounded-xl shadow-lg w-full h-auto"
                 data-testid="team-image"

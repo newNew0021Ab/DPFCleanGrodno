@@ -114,7 +114,6 @@ export default function QuickQuoteForm() {
                   <Input 
                     placeholder="Mercedes-Benz" 
                     {...field} 
-                    value={field.value || ""}
                     data-testid="input-quote-make"
                   />
                 </FormControl>
@@ -133,7 +132,6 @@ export default function QuickQuoteForm() {
                   <Input 
                     placeholder="Sprinter" 
                     {...field} 
-                    value={field.value || ""}
                     data-testid="input-quote-model"
                   />
                 </FormControl>

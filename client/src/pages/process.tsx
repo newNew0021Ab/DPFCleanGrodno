@@ -247,25 +247,25 @@ export default function Process() {
             
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="/attached_assets/generated_images/DPF_cleaning_equipment_station_2990d098.png" 
+                src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
                 alt="Профессиональное оборудование для очистки DPF" 
                 className="rounded-xl shadow-lg w-full h-auto"
                 data-testid="equipment-image-1"
               />
               <img 
-                src="/attached_assets/generated_images/BMW_X5_DPF_system_6af53973.png" 
+                src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
                 alt="Современный автосервис" 
                 className="rounded-xl shadow-lg w-full h-auto mt-8"
                 data-testid="equipment-image-2"
               />
               <img 
-                src="/attached_assets/generated_images/Mercedes_Sprinter_service_process_925c21ef.png" 
+                src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
                 alt="Процесс очистки фильтра" 
                 className="rounded-xl shadow-lg w-full h-auto"
                 data-testid="equipment-image-3"
               />
               <img 
-                src="/attached_assets/generated_images/Diagnostic_computer_workstation_2d113ae0.png" 
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
                 alt="Диагностическое оборудование" 
                 className="rounded-xl shadow-lg w-full h-auto mt-8"
                 data-testid="equipment-image-4"
