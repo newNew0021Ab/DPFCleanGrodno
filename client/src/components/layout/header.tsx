@@ -24,7 +24,6 @@ export default function Header() {
     { href: "/process", label: "Процесс" },
     { href: "/about", label: "О нас" },
     { href: "/gallery", label: "Галерея" },
-    { href: "/blog", label: "Блог" },
     { href: "/contact", label: "Контакты" },
   ];
 
