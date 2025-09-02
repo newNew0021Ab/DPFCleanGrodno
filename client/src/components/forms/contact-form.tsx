@@ -128,6 +128,7 @@ export default function ContactForm() {
                     type="email" 
                     placeholder="example@mail.com" 
                     {...field} 
+                    value={field.value || ""}
                     data-testid="input-email"
                   />
                 </FormControl>
@@ -146,6 +147,7 @@ export default function ContactForm() {
                   <Input 
                     placeholder="Например: Mercedes Sprinter" 
                     {...field} 
+                    value={field.value || ""}
                     data-testid="input-car-model"
                   />
                 </FormControl>
@@ -161,7 +163,7 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Тип услуги</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
+              <Select onValueChange={field.onChange} defaultValue={field.value || ""} value={field.value || ""}>
                 <FormControl>
                   <SelectTrigger data-testid="select-service-type">
                     <SelectValue placeholder="Выберите нужную услугу" />
@@ -191,6 +193,7 @@ export default function ContactForm() {
                   placeholder="Опишите симптомы: горят ли лампочки, есть ли потеря мощности..."
                   rows={4}
                   {...field}
+                  value={field.value || ""}
                   data-testid="textarea-description"
                 />
               </FormControl>
