@@ -43,7 +43,7 @@ export default function Header() {
             </div>
           </Link>
           
-          <nav className="hidden xl:flex items-center space-x-3 2xl:space-x-6">
+          <nav className="hidden xl:flex items-center space-x-4 2xl:space-x-8 mx-8 2xl:mx-12">
             {navigation.map((item) => (
               <Link key={item.href} href={item.href}>
                 <span 
