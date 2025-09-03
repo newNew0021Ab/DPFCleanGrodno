@@ -30,15 +30,15 @@ export default function Header() {
   return (
     <header className="bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-200 sticky top-0 z-50">
       <div className="container mx-auto px-2 sm:px-4">
-        <div className="flex items-center justify-between h-14 md:h-16">
+        <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer" data-testid="logo-link">
-              <div className="w-7 h-7 md:w-10 md:h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <Filter className="text-primary-foreground" size={14} />
+              <div className="w-8 h-8 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                <Filter className="text-primary-foreground" size={18} />
               </div>
               <div className="min-w-0">
-                <h1 className="text-sm md:text-xl font-bold text-gray-900 leading-tight truncate">ReFilter</h1>
-                <p className="text-xs md:text-sm text-gray-600 hidden sm:block truncate">Профессиональная чистка DPF</p>
+                <h1 className="text-base md:text-2xl font-bold text-gray-900 leading-tight truncate">ReFilter</h1>
+                <p className="text-sm md:text-base text-gray-600 hidden sm:block truncate">Профессиональная чистка DPF</p>
               </div>
             </div>
           </Link>
