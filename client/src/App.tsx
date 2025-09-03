@@ -36,11 +36,7 @@ function Router() {
 
 function App() {
   useEffect(() => {
-    if (!import.meta.env.VITE_GA_MEASUREMENT_ID) {
-      console.warn('Missing required Google Analytics key: VITE_GA_MEASUREMENT_ID');
-    } else {
       initGA();
-    }
   }, []);
 
   return (
