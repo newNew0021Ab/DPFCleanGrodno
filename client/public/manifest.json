@@ -1,6 +1,6 @@
 {
-  "name": "ЭкоДизель-Сервис",
-  "short_name": "ЭкоДизель",
+  "name": "ReFilter",
+  "short_name": "ReFilter",
   "description": "Профессиональная чистка DPF фильтров в Гродно",
   "start_url": "/",
   "display": "standalone",

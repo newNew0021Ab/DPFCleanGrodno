@@ -37,7 +37,7 @@ export default function Header() {
                 <Car className="text-primary-foreground" size={14} />
               </div>
               <div className="min-w-0">
-                <h1 className="text-sm md:text-xl font-bold text-gray-900 leading-tight truncate">ЭкоДизель-Сервис</h1>
+                <h1 className="text-sm md:text-xl font-bold text-gray-900 leading-tight truncate">ReFilter</h1>
                 <p className="text-xs md:text-sm text-gray-600 hidden sm:block truncate">Профессиональная чистка DPF</p>
               </div>
             </div>

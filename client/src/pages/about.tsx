@@ -83,17 +83,17 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>О компании ЭкоДизель-Сервис | Профессиональная чистка DPF в Гродно</title>
+        <title>О компании ReFilter | Профессиональная чистка DPF в Гродно</title>
         <meta 
           name="description" 
-          content="О компании ЭкоДизель-Сервис: 5+ лет опыта, современное оборудование, профессиональная команда. Чистка DPF фильтров в Гродно с гарантией качества." 
+          content="О компании ReFilter: 5+ лет опыта, современное оборудование, профессиональная команда. Чистка DPF фильтров в Гродно с гарантией качества." 
         />
       </Helmet>
 
       <Header />
       
       <Hero 
-        title="О компании ЭкоДизель-Сервис"
+        title="О компании ReFilter"
         subtitle="Профессиональная команда с многолетним опытом • Современное оборудование • Индивидуальный подход к каждому клиенту"
         showStats={false}
       />
@@ -126,7 +126,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Наша история</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                ЭкоДизель-Сервис основан в 2019 году группой специалистов автомобильной индустрии, 
+                ReFilter основан в 2019 году группой специалистов автомобильной индустрии, 
                 которые заметили растущую потребность в качественном обслуживании систем очистки выхлопных газов.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
@@ -153,7 +153,7 @@ export default function About() {
             <div className="space-y-6">
               <img 
                 src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
-                alt="Команда ЭкоДизель-Сервис" 
+                alt="Команда ReFilter" 
                 className="rounded-xl shadow-lg w-full h-auto"
                 data-testid="team-image"
               />

@@ -54,10 +54,10 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <title>Блог о DPF фильтрах | Советы и статьи | ЭкоДизель-Сервис</title>
+        <title>Блог о DPF фильтрах | Советы и статьи | ReFilter</title>
         <meta 
           name="description" 
-          content="Полезные статьи о DPF фильтрах, сажевых фильтрах, обслуживании дизельных автомобилей. Экспертные советы от ЭкоДизель-Сервис в Гродно." 
+          content="Полезные статьи о DPF фильтрах, сажевых фильтрах, обслуживании дизельных автомобилей. Экспертные советы от ReFilter в Гродно." 
         />
       </Helmet>
 
@@ -127,7 +127,7 @@ export default function Blog() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Все статьи</h2>
             <p className="text-xl text-muted-foreground">
-              Экспертные материалы от специалистов ЭкоДизель-Сервис
+              Экспертные материалы от специалистов ReFilter
             </p>
           </div>
 

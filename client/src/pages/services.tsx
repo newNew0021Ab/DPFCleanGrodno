@@ -103,7 +103,7 @@ export default function Services() {
   return (
     <>
       <Helmet>
-        <title>Услуги по чистке DPF фильтров в Гродно | ЭкоДизель-Сервис</title>
+        <title>Услуги по чистке DPF фильтров в Гродно | ReFilter</title>
         <meta 
           name="description" 
           content="Полный спектр услуг по чистке и обслуживанию DPF фильтров в Гродно. Диагностика, очистка, ремонт систем aftertreatment для всех марок авто." 

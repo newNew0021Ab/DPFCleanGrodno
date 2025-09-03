@@ -50,10 +50,10 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      content: "info@ecodizel-grodno.by",
+      content: "info@refilter-grodno.by",
       subtitle: "Ответим в течение часа",
       action: handleEmailClick,
-      href: "mailto:info@ecodizel-grodno.by",
+      href: "mailto:info@refilter-grodno.by",
       testId: "contact-email"
     }
   ];
@@ -61,16 +61,16 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Контакты | Запись на чистку DPF в Гродно | ЭкоДизель-Сервис</title>
+        <title>Контакты | Запись на чистку DPF в Гродно | ReFilter</title>
         <meta 
           name="description" 
-          content="Контакты ЭкоДизель-Сервис в Гродно. Запись на чистку DPF фильтров, адрес, телефоны, режим работы. Быстрая связь и консультации." 
+          content="Контакты ReFilter в Гродно. Запись на чистку DPF фильтров, адрес, телефоны, режим работы. Быстрая связь и консультации." 
         />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "ЭкоДизель-Сервис",
+            "name": "ReFilter",
             "description": "Профессиональная чистка DPF фильтров в Гродно",
             "telephone": "+375152123456",
             "address": {

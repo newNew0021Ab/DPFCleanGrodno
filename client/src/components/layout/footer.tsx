@@ -22,7 +22,7 @@ export default function Footer() {
                 <Car className="text-primary-foreground" size={20} />
               </div>
               <div>
-                <h3 className="text-lg font-bold">ЭкоДизель-Сервис</h3>
+                <h3 className="text-lg font-bold">ReFilter</h3>
               </div>
             </div>
             <p className="text-background/80 mb-4">
@@ -37,7 +37,7 @@ export default function Footer() {
                 <i className="fab fa-viber text-background/80"></i>
               </a>
               <a 
-                href="https://t.me/ecodiezel_grodno" 
+                href="https://t.me/refilter_grodno" 
                 className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-background/20 transition-colors"
                 data-testid="link-telegram"
               >
@@ -155,12 +155,12 @@ export default function Footer() {
               <div>
                 <p className="text-background/60 text-sm">Email</p>
                 <a 
-                  href="mailto:info@ecodizel-grodno.by" 
+                  href="mailto:info@refilter-grodno.by" 
                   className="text-background hover:text-accent transition-colors"
                   onClick={handleEmailClick}
                   data-testid="footer-email"
                 >
-                  info@ecodizel-grodno.by
+                  info@refilter-grodno.by
                 </a>
               </div>
               <div>
@@ -183,7 +183,7 @@ export default function Footer() {
 
         <div className="border-t border-background/20 mt-12 pt-8 text-center">
           <p className="text-background/60">
-            © 2024 ЭкоДизель-Сервис. Все права защищены. 
+            © 2024 ReFilter. Все права защищены. 
             <Link href="/privacy">
               <span className="hover:text-background transition-colors ml-2 cursor-pointer" data-testid="link-privacy">
                 Политика конфиденциальности

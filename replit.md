@@ -1,6 +1,6 @@
 # Overview
 
-This is a full-stack web application for "ЭкоДизель-Сервис" (EcoDiesel Service), a DPF (Diesel Particulate Filter) cleaning service business in Grodno, Belarus. The application serves as a professional service website offering DPF cleaning, diagnostics, and related services for diesel vehicles. It features a modern React frontend with a Node.js/Express backend, using PostgreSQL for data storage and Drizzle ORM for database operations.
+This is a full-stack web application for "ReFilter", a DPF (Diesel Particulate Filter) cleaning service business in Grodno, Belarus. The application serves as a professional service website offering DPF cleaning, diagnostics, and related services for diesel vehicles. It features a modern React frontend with a Node.js/Express backend, using PostgreSQL for data storage and Drizzle ORM for database operations.
 
 # User Preferences
 
