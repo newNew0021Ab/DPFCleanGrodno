@@ -18,7 +18,7 @@ export const initGA = () => {
   // Add Google Analytics script to the head
   const script1 = document.createElement('script');
   script1.async = true;
-  script1.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+  script1.src = `https://www.googletagmanager.com/gtag/js?id=G-KD4EJ23VB9`;
   document.head.appendChild(script1);
 
   // Initialize gtag
@@ -27,7 +27,7 @@ export const initGA = () => {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '${measurementId}');
+    gtag('config', 'G-KD4EJ23VB9');
   `;
   document.head.appendChild(script2);
 };
@@ -39,7 +39,7 @@ export const trackPageView = (url: string) => {
   const measurementId = 'G-KD4EJ23VB9';
   if (!measurementId) return;
   
-  window.gtag('config', measurementId, {
+  window.gtag('config','G-KD4EJ23VB9', {
     page_path: url
   });
 };
