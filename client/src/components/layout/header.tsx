@@ -47,7 +47,7 @@ export default function Header() {
             {navigation.map((item) => (
               <Link key={item.href} href={item.href}>
                 <span 
-                  className={`text-gray-700 hover:text-blue-600 transition-colors cursor-pointer font-medium px-2 2xl:px-3 py-2 rounded-md hover:bg-blue-50 text-sm 2xl:text-base whitespace-nowrap ${
+                  className={`text-gray-700 hover:text-blue-600 transition-colors cursor-pointer font-medium px-2 2xl:px-3 py-2 rounded-md hover:bg-blue-50 text-base 2xl:text-lg whitespace-nowrap ${
                     location === item.href ? 'text-blue-600 bg-blue-50 font-semibold' : ''
                   }`}
                   data-testid={`nav-${item.label.toLowerCase()}`}
