@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Car, Phone, MapPin, Clock, Mail } from "lucide-react";
+import { Filter, Phone, MapPin, Clock, Mail } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 
 export default function Footer() {
@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <Car className="text-primary-foreground" size={20} />
+                <Filter className="text-primary-foreground" size={20} />
               </div>
               <div>
                 <h3 className="text-lg font-bold">ReFilter</h3>

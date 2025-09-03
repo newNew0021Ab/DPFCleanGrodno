@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Phone, Car } from "lucide-react";
+import { Menu, Phone, Filter } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 
 export default function Header() {
@@ -34,7 +34,7 @@ export default function Header() {
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer" data-testid="logo-link">
               <div className="w-7 h-7 md:w-10 md:h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                <Car className="text-primary-foreground" size={14} />
+                <Filter className="text-primary-foreground" size={14} />
               </div>
               <div className="min-w-0">
                 <h1 className="text-sm md:text-xl font-bold text-gray-900 leading-tight truncate">ReFilter</h1>
