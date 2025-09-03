@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Phone, Clock, Mail, Car } from "lucide-react";
+import { MapPin, Phone, Clock, Mail, Car, ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
