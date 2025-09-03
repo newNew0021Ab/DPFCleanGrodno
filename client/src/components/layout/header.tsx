@@ -29,25 +29,25 @@ export default function Header() {
 
   return (
     <header className="bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-200 sticky top-0 z-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2 sm:px-4">
         <div className="flex items-center justify-between h-14 md:h-16">
           <Link href="/">
-            <div className="flex items-center space-x-2 md:space-x-3 cursor-pointer" data-testid="logo-link">
-              <div className="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-lg flex items-center justify-center">
-                <Car className="text-primary-foreground" size={16} />
+            <div className="flex items-center space-x-2 cursor-pointer" data-testid="logo-link">
+              <div className="w-7 h-7 md:w-10 md:h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                <Car className="text-primary-foreground" size={14} />
               </div>
-              <div>
-                <h1 className="text-base md:text-xl font-bold text-gray-900 leading-tight">ЭкоДизель-Сервис</h1>
-                <p className="text-xs md:text-sm text-gray-600 hidden sm:block">Профессиональная чистка DPF</p>
+              <div className="min-w-0">
+                <h1 className="text-sm md:text-xl font-bold text-gray-900 leading-tight truncate">ЭкоДизель-Сервис</h1>
+                <p className="text-xs md:text-sm text-gray-600 hidden sm:block truncate">Профессиональная чистка DPF</p>
               </div>
             </div>
           </Link>
           
-          <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
+          <nav className="hidden xl:flex items-center space-x-2 2xl:space-x-4">
             {navigation.map((item) => (
               <Link key={item.href} href={item.href}>
                 <span 
-                  className={`text-gray-700 hover:text-blue-600 transition-colors cursor-pointer font-medium px-2 xl:px-3 py-2 rounded-md hover:bg-blue-50 text-sm xl:text-base ${
+                  className={`text-gray-700 hover:text-blue-600 transition-colors cursor-pointer font-medium px-1 2xl:px-3 py-2 rounded-md hover:bg-blue-50 text-xs 2xl:text-base whitespace-nowrap ${
                     location === item.href ? 'text-blue-600 bg-blue-50 font-semibold' : ''
                   }`}
                   data-testid={`nav-${item.label.toLowerCase()}`}
@@ -58,12 +58,12 @@ export default function Header() {
             ))}
           </nav>
           
-          <div className="flex items-center space-x-2 md:space-x-4">
-            <div className="text-right hidden md:block">
-              <p className="text-xs xl:text-sm text-gray-600">Звоните сейчас</p>
+          <div className="flex items-center space-x-1 sm:space-x-2 lg:space-x-4">
+            <div className="text-right hidden lg:block">
+              <p className="text-xs text-gray-600">Звоните сейчас</p>
               <a 
                 href="tel:+375152123456" 
-                className="text-sm xl:text-lg font-bold text-blue-600 hover:text-blue-700"
+                className="text-sm xl:text-base font-bold text-blue-600 hover:text-blue-700 whitespace-nowrap"
                 onClick={handlePhoneClick}
                 data-testid="header-phone"
               >
@@ -71,7 +71,7 @@ export default function Header() {
               </a>
             </div>
             <Button 
-              className="bg-orange-500 text-white hover:bg-orange-600 font-medium px-3 md:px-6 py-2 text-sm md:text-base hidden md:inline-flex"
+              className="bg-orange-500 text-white hover:bg-orange-600 font-medium px-2 sm:px-4 lg:px-6 py-2 text-xs sm:text-sm lg:text-base hidden sm:inline-flex"
               onClick={handleCallbackClick}
               data-testid="button-callback"
             >
@@ -82,7 +82,7 @@ export default function Header() {
             {/* Mobile Menu */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="lg:hidden p-2" data-testid="button-mobile-menu">
+                <Button variant="ghost" size="icon" className="xl:hidden p-1 sm:p-2" data-testid="button-mobile-menu">
                   <Menu size={18} />
                 </Button>
               </SheetTrigger>
