@@ -43,11 +43,11 @@ export default function Header() {
             </div>
           </Link>
           
-          <nav className="hidden xl:flex items-center space-x-2 2xl:space-x-4">
+          <nav className="hidden xl:flex items-center space-x-3 2xl:space-x-6">
             {navigation.map((item) => (
               <Link key={item.href} href={item.href}>
                 <span 
-                  className={`text-gray-700 hover:text-blue-600 transition-colors cursor-pointer font-medium px-1 2xl:px-3 py-2 rounded-md hover:bg-blue-50 text-xs 2xl:text-base whitespace-nowrap ${
+                  className={`text-gray-700 hover:text-blue-600 transition-colors cursor-pointer font-medium px-2 2xl:px-3 py-2 rounded-md hover:bg-blue-50 text-sm 2xl:text-base whitespace-nowrap ${
                     location === item.href ? 'text-blue-600 bg-blue-50 font-semibold' : ''
                   }`}
                   data-testid={`nav-${item.label.toLowerCase()}`}
