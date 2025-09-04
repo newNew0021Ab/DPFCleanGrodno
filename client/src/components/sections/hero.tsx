@@ -74,13 +74,13 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src="https://images.unsplash.com/photo-1746682002146-2822cae116ae?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400" 
               alt="Профессиональное оборудование для чистки DPF фильтров" 
               className="rounded-2xl shadow-2xl w-full h-auto"
               data-testid="hero-image"
             />
             
-            <div className="absolute -bottom-3 md:-bottom-6 -left-3 md:-left-6 bg-card text-foreground p-3 md:p-4 rounded-xl shadow-lg">
+            <div className="absolute -bottom-3 md:-bottom-6 -right-3 md:-right-6 bg-card text-foreground p-3 md:p-4 rounded-xl shadow-lg">
               <div className="flex items-center space-x-2 md:space-x-3">
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-full flex items-center justify-center">
                   <CheckCircle className="text-white" size={16} />
