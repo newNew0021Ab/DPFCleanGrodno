@@ -61,45 +61,63 @@ export default function About() {
     },
   ];
 
-  const equipment = [
+  const whyChooseUs = [
     {
-      name: "Ультразвуковая установка FSX-3000",
-      description: "Профессиональная ультразвуковая ванна для глубокой очистки",
+      icon: Clock,
+      title: "Экономим время",
+      description: "Быстрая диагностика и восстановление фильтра за 1-2 дня. Не тратьте недели на поиски решения — мы решим проблему оперативно.",
       features: [
-        "Частота 40 кГц",
-        "Объем 150 литров",
-        "Автоматический цикл",
-        "Фильтрация раствора",
+        "Диагностика за 30 минут",
+        "Восстановление за 1-2 дня",
+        "Работаем без выходных",
+        "Уведомления о готовности",
       ],
     },
     {
-      name: "Термическая печь TERMO-DPF",
-      description:
-        "Высокотемпературная печь для выжигания органических отложений",
+      icon: Settings,
+      title: "Современные методы очистки",
+      description: "Используем передовые технологии: ультразвуковую очистку, термическое восстановление и химическую обработку.",
       features: [
-        "Температура до 600°C",
-        "Контроль атмосферы",
-        "Программируемые циклы",
-        "Система безопасности",
+        "Ультразвуковая технология",
+        "Термическое восстановление",
+        "Экологически безопасно",
+        "Проверка эффективности",
       ],
     },
     {
-      name: "Стенд проверки FlowTest-Pro",
-      description: "Измерение пропускной способности и эффективности фильтра",
+      icon: Car,
+      title: "Выезд по городу",
+      description: "Забираем ваш автомобиль прямо от дома или офиса и доставляем обратно после восстановления фильтра.",
       features: [
-        "Точность ±2%",
-        "Автоматическое тестирование",
-        "Протокол результатов",
-        "Сравнение с эталоном",
+        "Бесплатный забор авто",
+        "Доставка после работ",
+        "Работаем по всему городу",
+        "Удобное время подачи",
       ],
     },
   ];
 
-  const certifications = [
-    "Сертификат соответствия на услуги",
-    "Разрешение на работу с опасными отходами",
-    "Аттестация специалистов",
-    "Сертификация оборудования",
+  const guaranteesData = [
+    {
+      icon: Shield,
+      title: "Гарантия на 10 000 км",
+      description: "Мы уверены в качестве работ, поэтому даём гарантию на 10 000 км пробега или 6 месяцев.",
+    },
+    {
+      icon: Target,
+      title: "Возврат средств",
+      description: "Если фильтр не восстановится до заявленных показателей — возвращаем 100% стоимости.",
+    },
+    {
+      icon: CheckCircle,
+      title: "Письменная гарантия",
+      description: "Все обязательства фиксируем документально с указанием конкретных показателей восстановления.",
+    },
+    {
+      icon: Users,
+      title: "Ответственность за результат",
+      description: "Несем полную ответственность за качество работ и готовы устранить любые недочеты бесплатно.",
+    },
   ];
 
   return (
@@ -247,30 +265,33 @@ export default function About() {
         </div>
       </section>
 
-      {/* Equipment Details */}
+      {/* Why Choose Us */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Наше оборудование
+              Почему выбирают нас
             </h2>
             <p className="text-xl text-muted-foreground">
-              Современные технологии для максимально эффективной очистки
+              Наши главные преимущества, которые ценят клиенты
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {equipment.map((item, index) => (
+            {whyChooseUs.map((item, index) => (
               <Card key={index} className="border border-border">
                 <CardHeader>
-                  <CardTitle className="text-lg">{item.name}</CardTitle>
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <item.icon className="text-primary" size={24} />
+                  </div>
+                  <CardTitle className="text-lg">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
                     {item.description}
                   </p>
                   <div className="space-y-2">
-                    <h4 className="font-semibold text-sm">Характеристики:</h4>
+                    <h4 className="font-semibold text-sm">Преимущества:</h4>
                     <ul className="space-y-1">
                       {item.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center">
@@ -290,26 +311,35 @@ export default function About() {
         </div>
       </section>
 
-      {/* Certifications */}
+      {/* Guarantees and Responsibility */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Сертификаты и лицензии
+              Гарантии и ответственность
             </h2>
             <p className="text-xl text-muted-foreground">
-              Официальные разрешения и подтверждения качества
+              Мы отвечаем за качество наших услуг и даем четкие гарантии
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {certifications.map((cert, index) => (
-              <Card key={index} className="text-center">
-                <CardContent className="p-6">
-                  <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Award className="text-green-500" size={24} />
+          <div className="grid md:grid-cols-2 gap-8">
+            {guaranteesData.map((guarantee, index) => (
+              <Card key={index} className="border border-border">
+                <CardContent className="p-8">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <guarantee.icon className="text-green-500" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 text-green-600">
+                        {guarantee.title}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {guarantee.description}
+                      </p>
+                    </div>
                   </div>
-                  <p className="font-medium text-sm">{cert}</p>
                 </CardContent>
               </Card>
             ))}
