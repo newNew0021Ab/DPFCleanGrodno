@@ -95,7 +95,7 @@ export class MemStorage implements IStorage {
       name: "Елена Козлова",
       carModel: "Volkswagen Touran",
       rating: 5,
-      comment: "Быстро и качественно! Сделали за один день, предупредили о каждом этапе работы. Цена справедливая, гарантию дали на год.",
+      comment: "Быстро и качественно! Сделали за один день, предупредили о каждом этапе работы. Цена справедливая.",
       approved: true,
       createdAt: new Date(),
     };

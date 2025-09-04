@@ -26,7 +26,7 @@ export default function Home() {
         <title>Профессиональная чистка DPF фильтров в Гродно | ReFilter</title>
         <meta 
           name="description" 
-          content="Профессиональная чистка сажевых фильтров (DPF) в Гродно. Гарантия 12 месяцев, восстановление до 98% эффективности. Обслуживаем легковые и грузовые автомобили." 
+          content="Профессиональная чистка сажевых фильтров (DPF) в Гродно. Гарантия 6 месяцев, восстановление до 98% эффективности. Обслуживаем легковые и грузовые автомобили." 
         />
         <meta 
           name="keywords" 
@@ -38,7 +38,7 @@ export default function Home() {
       
       <Hero 
         title="Профессиональная чистка DPF фильтров в Гродно"
-        subtitle="Восстанавливаем до 99% эффективности • Гарантия 6 месяцев • Экономия до 15 000 BYN на замене • Экспресс-диагностика за 15 минут"
+        subtitle="Восстанавливаем до 98% эффективности • Гарантия 6 месяцев • Экономия до 15 000 BYN на замене • Экспресс-диагностика за 15 минут"
       />
       
       <QuickContact />
@@ -75,7 +75,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="text-green-500 mr-2" size={16} />
-                    <span className="text-sm">12 месяцев гарантии</span>
+                    <span className="text-sm">6 месяцев гарантии</span>
                   </li>
                 </ul>
                 <div className="text-2xl font-bold text-primary mb-4" data-testid="price-dpf-cleaning">от 390 BYN</div>
@@ -115,7 +115,7 @@ export default function Home() {
                     <span className="text-sm">Принудительная регенерация</span>
                   </li>
                 </ul>
-                <div className="text-2xl font-bold text-primary mb-4" data-testid="price-diagnostics">БЕСПЛАТНО</div>
+                <div className="text-2xl font-bold text-primary mb-4" data-testid="price-diagnostics">Бесплатно</div>
                 <Link href="/services">
                   <Button 
                     className="w-full"
@@ -152,7 +152,7 @@ export default function Home() {
                     <span className="text-sm">Договор обслуживания</span>
                   </li>
                 </ul>
-                <div className="text-2xl font-bold text-primary mb-4" data-testid="price-fleet">по договору</div>
+                <div className="text-2xl font-bold text-primary mb-4" data-testid="price-fleet">По договору</div>
                 <Link href="/services">
                   <Button 
                     className="w-full"
@@ -174,13 +174,13 @@ export default function Home() {
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Почему выбирают нас</h2>
             <p className="text-lg md:text-xl text-muted-foreground px-4">
-              Преимущества работы с ЭкоДизель-Сервис
+              Преимущества работы с ReFilter
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-20 h-20 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="text-primary" size={32} />
               </div>
               <h3 className="text-lg font-semibold mb-2">Гарантия результата</h3>
@@ -190,14 +190,15 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="text-accent" size={32} />
+              <div className="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="text-green-500" size={32} />
               </div>
               <h3 className="text-lg font-semibold mb-2">Быстрый сервис</h3>
               <p className="text-muted-foreground text-sm">
                 Очистка фильтра за 3-4 часа в день обращения
               </p>
             </div>
+          
 
             <div className="text-center">
               <div className="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -205,7 +206,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Опыт и экспертиза</h3>
               <p className="text-muted-foreground text-sm">
-                Более 5 лет в сфере обслуживания DPF систем
+                Более 2 лет в сфере обслуживания DPF систем
               </p>
             </div>
 
@@ -235,22 +236,22 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center">
               <div className="stat-card bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2 animate-pulse-gentle" data-testid="stat-filters-cleaned">2500+</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2 animate-pulse-gentle" data-testid="stat-filters-cleaned">300+</div>
                 <p className="text-muted-foreground font-medium">фильтров очищено</p>
               </div>
             </div>
 
             <div className="text-center">
               <div className="stat-card bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl">
-                <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2 animate-pulse-gentle" data-testid="stat-success-rate">99%</div>
+                <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2 animate-pulse-gentle" data-testid="stat-success-rate">98%</div>
                 <p className="text-muted-foreground font-medium">успешных восстановлений</p>
               </div>
             </div>
 
             <div className="text-center">
               <div className="stat-card bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl">
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-2 animate-pulse-gentle" data-testid="stat-experience">5+</div>
-                <p className="text-muted-foreground font-medium">лет опыта</p>
+                <div className="text-3xl md:text-4xl font-bold text-accent mb-2 animate-pulse-gentle" data-testid="stat-experience">2+</div>
+                <p className="text-muted-foreground font-medium">года опыта</p>
               </div>
             </div>
 
@@ -265,8 +266,8 @@ export default function Home() {
           <div className="mt-12 bg-white rounded-3xl p-8 shadow-xl">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i className="fas fa-clock text-primary text-2xl"></i>
+                <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i className="fas fa-clock text-blue-500 text-2xl"></i>
                 </div>
                 <h3 className="text-xl font-bold mb-2">Экспресс-диагностика</h3>
                 <p className="text-muted-foreground">Оценим состояние фильтра за 15 минут в вашем присутствии</p>
@@ -375,14 +376,14 @@ export default function Home() {
                 title: "Диагностика",
                 description: "Проверка целостности и измерение степени засорения фильтра",
                 icon: "fas fa-search",
-                color: "primary"
+                color: "green-500"
               },
               {
                 step: "02",
                 title: "Монтаж и тестирование",
                 description: "Установка в оборудование и проверка противодавления",
                 icon: "fas fa-cogs",
-                color: "accent"
+                color: "blue-500",
               },
               {
                 step: "03",
@@ -417,7 +418,7 @@ export default function Home() {
             <div className="bg-white rounded-2xl p-8 shadow-lg inline-block">
               <h3 className="text-xl font-bold mb-4">Время выполнения</h3>
               <div className="flex items-center justify-center space-x-4">
-                <Clock className="text-primary" size={24} />
+                <Clock className="text-blue-500" size={24} />
                 <span className="text-2xl font-bold text-primary">1-3 часа</span>
               </div>
               <p className="text-muted-foreground mt-2">В зависимости от степени загрязнения</p>

@@ -57,7 +57,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
             {showStats && (
               <div className="grid grid-cols-3 gap-3 md:gap-6 text-center">
                 <div data-testid="stat-filters">
-                  <div className="text-xl md:text-3xl font-bold text-accent">500+</div>
+                  <div className="text-xl md:text-3xl font-bold text-accent">300+</div>
                   <div className="text-xs md:text-sm text-blue-100">Очищенных фильтров</div>
                 </div>
                 <div data-testid="stat-restoration">
@@ -65,7 +65,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
                   <div className="text-xs md:text-sm text-blue-100">Восстановление</div>
                 </div>
                 <div data-testid="stat-warranty">
-                  <div className="text-xl md:text-3xl font-bold text-accent">12</div>
+                  <div className="text-xl md:text-3xl font-bold text-accent">6</div>
                   <div className="text-xs md:text-sm text-blue-100">Месяцев гарантии</div>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1746682002146-2822cae116ae?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400" 
+              src="https://images.unsplash.com/photo-1556783151-c6d5e7d296bb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400" 
               alt="Профессиональное оборудование для чистки DPF фильтров" 
               className="rounded-2xl shadow-2xl w-full h-auto"
               data-testid="hero-image"
