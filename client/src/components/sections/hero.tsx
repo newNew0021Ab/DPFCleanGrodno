@@ -33,18 +33,18 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/80"></div>
       
-      <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
-        <div className="w-full max-w-4xl">
-          <div className="fade-in text-center md:text-left bg-black/30 p-6 md:p-8 rounded-2xl backdrop-blur-sm">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6 text-white drop-shadow-lg">
+      <div className="container mx-auto px-4 relative z-10 h-full flex items-center justify-center">
+        <div className="w-full max-w-5xl">
+          <div className="fade-in text-center bg-black/30 p-8 md:p-12 rounded-3xl backdrop-blur-sm mx-auto">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 md:mb-8 text-white drop-shadow-lg">
               {title}
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 text-gray-50 max-w-3xl mx-auto md:mx-0 drop-shadow-md">
+            <p className="text-lg md:text-xl lg:text-2xl mb-10 md:mb-12 text-gray-50 max-w-4xl mx-auto drop-shadow-md">
               {subtitle}
             </p>
             
             {showCTA && (
-              <div className="flex flex-col sm:flex-row gap-4 md:gap-6 mb-8 md:mb-12 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-6 mb-10 md:mb-14 justify-center">
                 <Button 
                   className="bg-accent text-accent-foreground px-6 md:px-10 py-4 md:py-5 text-lg md:text-xl font-semibold hover:bg-accent/90 h-auto shadow-lg"
                   onClick={handleCalculatorClick}
@@ -68,7 +68,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
             )}
             
             {showStats && (
-              <div className="grid grid-cols-3 gap-6 md:gap-12 text-center max-w-2xl mx-auto md:mx-0">
+              <div className="grid grid-cols-3 gap-8 md:gap-16 text-center max-w-3xl mx-auto">
                 <div data-testid="stat-filters">
                   <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2 drop-shadow-lg">300+</div>
                   <div className="text-sm md:text-base text-white drop-shadow-md">Очищенных фильтров</div>
