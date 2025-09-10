@@ -31,15 +31,15 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
       ></div>
       
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/70"></div>
       
       <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
         <div className="w-full max-w-4xl">
-          <div className="fade-in text-center md:text-left">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
+          <div className="fade-in text-center md:text-left bg-black/30 p-6 md:p-8 rounded-2xl backdrop-blur-sm">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6 text-white drop-shadow-lg">
               {title}
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 text-gray-100 max-w-3xl mx-auto md:mx-0">
+            <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 text-gray-50 max-w-3xl mx-auto md:mx-0 drop-shadow-md">
               {subtitle}
             </p>
             
@@ -70,32 +70,19 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
             {showStats && (
               <div className="grid grid-cols-3 gap-6 md:gap-12 text-center max-w-2xl mx-auto md:mx-0">
                 <div data-testid="stat-filters">
-                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2">300+</div>
-                  <div className="text-sm md:text-base text-gray-200">Очищенных фильтров</div>
+                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2 drop-shadow-lg">300+</div>
+                  <div className="text-sm md:text-base text-white drop-shadow-md">Очищенных фильтров</div>
                 </div>
                 <div data-testid="stat-restoration">
-                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2">98%</div>
-                  <div className="text-sm md:text-base text-gray-200">Восстановление</div>
+                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2 drop-shadow-lg">98%</div>
+                  <div className="text-sm md:text-base text-white drop-shadow-md">Восстановление</div>
                 </div>
                 <div data-testid="stat-warranty">
-                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2">6</div>
-                  <div className="text-sm md:text-base text-gray-200">Месяцев гарантии</div>
+                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2 drop-shadow-lg">6</div>
+                  <div className="text-sm md:text-base text-white drop-shadow-md">Месяцев гарантии</div>
                 </div>
               </div>
             )}
-          </div>
-        </div>
-        
-        {/* Badge positioned absolutely */}
-        <div className="absolute bottom-6 right-6 bg-card text-foreground p-3 md:p-4 rounded-xl shadow-lg">
-          <div className="flex items-center space-x-2 md:space-x-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-full flex items-center justify-center">
-              <CheckCircle className="text-white" size={16} />
-            </div>
-            <div>
-              <p className="font-semibold">Работаем в Гродно</p>
-              <p className="text-sm text-muted-foreground">Быстрый результат</p>
-            </div>
           </div>
         </div>
       </div>
