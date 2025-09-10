@@ -22,7 +22,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
     <section className="hero-gradient py-12 md:py-20 text-white relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="fade-in order-2 md:order-1">
+          <div className="fade-in order-1 md:order-1">
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 md:mb-6">
               {title}
             </h1>
@@ -72,7 +72,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
             )}
           </div>
           
-          <div className="relative order-1 md:order-2">
+          <div className="relative order-2 md:order-2">
             <img 
               src="https://images.unsplash.com/photo-1556783151-c6d5e7d296bb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400" 
               alt="Профессиональное оборудование для чистки DPF фильтров" 
