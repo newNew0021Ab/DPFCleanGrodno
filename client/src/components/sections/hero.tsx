@@ -72,7 +72,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
             )}
           </div>
           
-          <div className="relative">
+          <div className="relative mt-8 md:mt-0">
             <img 
               src="https://images.unsplash.com/photo-1556783151-c6d5e7d296bb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400" 
               alt="Профессиональное оборудование для чистки DPF фильтров" 
@@ -80,14 +80,14 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
               data-testid="hero-image"
             />
             
-            <div className="absolute -bottom-3 md:-bottom-6 -right-3 md:-right-6 bg-card text-foreground p-3 md:p-4 rounded-xl shadow-lg">
+            <div className="absolute top-4 right-4 md:-bottom-6 md:-right-6 md:top-auto bg-card text-foreground p-3 md:p-4 rounded-xl shadow-lg">
               <div className="flex items-center space-x-2 md:space-x-3">
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-full flex items-center justify-center">
                   <CheckCircle className="text-white" size={16} />
                 </div>
                 <div>
-                  <p className="font-semibold">Работаем в Гродно</p>
-                  <p className="text-sm text-muted-foreground">Быстрый результат</p>
+                  <p className="font-semibold text-sm md:text-base">Работаем в Гродно</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Быстрый результат</p>
                 </div>
               </div>
             </div>

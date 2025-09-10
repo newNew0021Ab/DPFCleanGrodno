@@ -220,52 +220,59 @@ export default function Home() {
           </div>
 
           {/* Additional Services */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-xl font-bold text-center mb-8">Дополнительные услуги</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
+          <div className="text-center mb-8">
+            <h3 className="text-xl font-bold">Дополнительные услуги</h3>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Diagnostics Card */}
+            <Card className="border border-border">
+              <CardContent className="p-6">
                 <h4 className="font-semibold mb-4 flex items-center">
                   <Wrench className="text-accent mr-2" size={20} />
                   Диагностика и программирование
                 </h4>
-                <div className="space-y-2">
-                  <div className="flex justify-between">
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center py-2 border-b border-border/30">
                     <span>Компьютерная диагностика</span>
                     <span className="font-semibold text-green-600">Бесплатно*</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center py-2 border-b border-border/30">
                     <span>Принудительная регенерация</span>
                     <span className="font-semibold">80 BYN</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center py-2 border-b border-border/30">
                     <span>Сброс ошибок DPF</span>
                     <span className="font-semibold">50 BYN</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-2">* При заказе чистки фильтра</p>
+                  <p className="text-xs text-muted-foreground mt-3">* При заказе чистки фильтра</p>
                 </div>
-              </div>
-              
-              <div>
+              </CardContent>
+            </Card>
+            
+            {/* Delivery Card */}
+            <Card className="border border-border">
+              <CardContent className="p-6">
                 <h4 className="font-semibold mb-4 flex items-center">
                   <MapPin className="text-primary mr-2" size={20} />
                   Доставка и выезд
                 </h4>
-                <div className="space-y-2">
-                  <div className="flex justify-between">
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center py-2 border-b border-border/30">
                     <span>В пределах Гродно</span>
                     <span className="font-semibold text-green-600">Бесплатно</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center py-2 border-b border-border/30">
                     <span>Гродненская область</span>
                     <span className="font-semibold">2 BYN/км</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center py-2 border-b border-border/30">
                     <span>По Беларуси</span>
                     <span className="font-semibold">договорная</span>
                   </div>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
