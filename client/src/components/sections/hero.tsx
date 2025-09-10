@@ -19,36 +19,36 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
   };
 
   return (
-    <section className="hero-gradient py-12 md:py-20 text-white relative overflow-hidden min-h-[500px] md:min-h-[600px]">
+    <section className="hero-gradient py-16 md:py-24 lg:py-32 text-white relative overflow-hidden min-h-[600px] md:min-h-[700px]">
       
-      <div className="container mx-auto px-4 relative z-10 h-full flex items-center justify-center">
-        <div className="w-full max-w-5xl">
-          <div className="fade-in text-center mx-auto">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 md:mb-8 text-white">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10 h-full flex items-center justify-center">
+        <div className="w-full max-w-6xl">
+          <div className="fade-in text-center mx-auto py-8 md:py-12">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-8 md:mb-10 text-white px-4">
               {title}
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl mb-10 md:mb-12 text-blue-100 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl lg:text-3xl mb-12 md:mb-16 text-blue-100 max-w-5xl mx-auto leading-relaxed px-4">
               {subtitle}
             </p>
             
             {showCTA && (
-              <div className="flex flex-col sm:flex-row gap-4 md:gap-6 mb-10 md:mb-14 justify-center">
+              <div className="flex flex-col sm:flex-row gap-6 md:gap-8 mb-16 md:mb-20 justify-center px-4">
                 <Button 
-                  className="bg-accent text-accent-foreground px-6 md:px-10 py-4 md:py-5 text-lg md:text-xl font-semibold hover:bg-accent/90 h-auto shadow-lg"
+                  className="bg-accent text-accent-foreground px-8 md:px-12 py-5 md:py-6 text-xl md:text-2xl font-semibold hover:bg-accent/90 h-auto shadow-xl transition-all duration-300 hover:scale-105"
                   onClick={handleCalculatorClick}
                   data-testid="button-calculator"
                 >
-                  <Calculator className="mr-3" size={20} />
+                  <Calculator className="mr-3" size={24} />
                   <span className="hidden sm:inline">Рассчитать стоимость</span>
                   <span className="sm:hidden">Расчет</span>
                 </Button>
                 <Button 
                   variant="outline"
-                  className="bg-white/10 text-white border-white/30 px-6 md:px-10 py-4 md:py-5 text-lg md:text-xl font-semibold hover:bg-white/20 h-auto backdrop-blur-sm shadow-lg"
+                  className="bg-white/10 text-white border-white/30 px-8 md:px-12 py-5 md:py-6 text-xl md:text-2xl font-semibold hover:bg-white/20 h-auto backdrop-blur-sm shadow-xl transition-all duration-300 hover:scale-105"
                   onClick={handleConsultationClick}
                   data-testid="button-consultation"
                 >
-                  <Phone className="mr-3" size={20} />
+                  <Phone className="mr-3" size={24} />
                   <span className="hidden sm:inline">Получить консультацию</span>
                   <span className="sm:hidden">Консультация</span>
                 </Button>
@@ -56,18 +56,18 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
             )}
             
             {showStats && (
-              <div className="grid grid-cols-3 gap-8 md:gap-16 text-center max-w-3xl mx-auto">
+              <div className="grid grid-cols-3 gap-6 md:gap-12 lg:gap-16 text-center max-w-4xl mx-auto px-4">
                 <div data-testid="stat-filters">
-                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2">300+</div>
-                  <div className="text-sm md:text-base text-blue-100">Очищенных фильтров</div>
+                  <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-accent mb-3 md:mb-4">300+</div>
+                  <div className="text-base md:text-lg lg:text-xl text-blue-100 font-medium">Очищенных фильтров</div>
                 </div>
                 <div data-testid="stat-restoration">
-                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2">98%</div>
-                  <div className="text-sm md:text-base text-blue-100">Восстановление</div>
+                  <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-accent mb-3 md:mb-4">98%</div>
+                  <div className="text-base md:text-lg lg:text-xl text-blue-100 font-medium">Восстановление</div>
                 </div>
                 <div data-testid="stat-warranty">
-                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent mb-2">6</div>
-                  <div className="text-sm md:text-base text-blue-100">Месяцев гарантии</div>
+                  <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-accent mb-3 md:mb-4">6</div>
+                  <div className="text-base md:text-lg lg:text-xl text-blue-100 font-medium">Месяцев гарантии</div>
                 </div>
               </div>
             )}
