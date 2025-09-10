@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calculator, Phone } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import heroBackground from "@assets/generated_images/Professional_DPF_service_workshop_9f7996b1.png";
 
 interface HeroProps {
   title: string;
@@ -19,7 +20,18 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
   };
 
   return (
-    <section className="hero-gradient py-20 md:py-32 text-white relative overflow-hidden">
+    <section className="py-20 md:py-32 text-white relative overflow-hidden min-h-[600px]">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${heroBackground})`,
+        }}
+      ></div>
+      
+      {/* Blue Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 via-blue-700/80 to-blue-800/90"></div>
+      
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 text-white">
