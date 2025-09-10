@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { CheckCircle, Filter, Wrench, Truck, Star, Clock, Shield, Award } from "lucide-react";
+import { CheckCircle, Filter, Wrench, Truck, Star, Clock, Shield, Award, Car, Building2, MapPin } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/layout/header";
@@ -43,127 +43,229 @@ export default function Home() {
       
       <QuickContact />
 
-      {/* Services Preview */}
+      {/* DPF Cleaning Pricing Plans */}
       <section className="py-12 md:py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Наши услуги</h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
-              Полный спектр услуг по обслуживанию систем очистки выхлопных газов
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Чистка DPF фильтров</h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
+              Прозрачная ценовая политика для всех категорий клиентов. Профессиональная очистка с гарантией 98% восстановления эффективности
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {/* Service Card 1 */}
-            <Card className="service-card border border-border">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-12">
+            {/* Private Clients */}
+            <Card className="service-card border border-border relative">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                  <Filter className="text-primary" size={32} />
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Car className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Частные клиенты</h3>
+                  <p className="text-muted-foreground text-sm">Легковые автомобили</p>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Чистка DPF фильтров</h3>
-                <p className="text-muted-foreground mb-6">
-                  Профессиональная очистка сажевых фильтров с гарантией восстановления до 98% эффективности
-                </p>
+                
+                <div className="space-y-4 mb-6">
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="text-sm">Малолитражки (до 1.6л)</span>
+                    <span className="font-semibold text-primary">390 BYN</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="text-sm">Средний класс (1.6-2.5л)</span>
+                    <span className="font-semibold text-primary">450 BYN</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="text-sm">Премиум (свыше 2.5л)</span>
+                    <span className="font-semibold text-primary">520 BYN</span>
+                  </div>
+                </div>
+
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center">
                     <CheckCircle className="text-green-500 mr-2" size={16} />
-                    <span className="text-sm">Ультразвуковая очистка</span>
+                    <span className="text-sm">Диагностика бесплатно</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="text-green-500 mr-2" size={16} />
-                    <span className="text-sm">Тестирование до/после</span>
+                    <span className="text-sm">Гарантия 6 месяцев</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="text-green-500 mr-2" size={16} />
-                    <span className="text-sm">6 месяцев гарантии</span>
+                    <span className="text-sm">Работы за 1 день</span>
                   </li>
                 </ul>
-                <div className="text-2xl font-bold text-primary mb-4" data-testid="price-dpf-cleaning">от 390 BYN</div>
-                <Link href="/services">
+
+                <Link href="/calculator">
                   <Button 
                     className="w-full"
-                    onClick={() => handleServiceClick('dpf_cleaning')}
-                    data-testid="button-service-dpf"
+                    onClick={() => handleServiceClick('private_dpf')}
+                    data-testid="button-service-private"
                   >
-                    Подробнее
+                    Рассчитать точно
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
-            {/* Service Card 2 */}
-            <Card className="service-card border border-border">
+            {/* Commercial Transport */}
+            <Card className="service-card border-2 border-primary relative transform scale-105">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
+                  Популярно
+                </span>
+              </div>
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-                  <Wrench className="text-accent" size={32} />
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Truck className="text-accent" size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Малый бизнес</h3>
+                  <p className="text-muted-foreground text-sm">Коммерческий транспорт</p>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Диагностика и ремонт</h3>
-                <p className="text-muted-foreground mb-6">
-                  Компьютерная диагностика систем очистки выхлопных газов и устранение неисправностей
-                </p>
+                
+                <div className="space-y-4 mb-6">
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="text-sm">Микроавтобусы</span>
+                    <span className="font-semibold text-accent">580 BYN</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="text-sm">Легкие грузовики</span>
+                    <span className="font-semibold text-accent">680 BYN</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="text-sm">Средние грузовики</span>
+                    <span className="font-semibold text-accent">750 BYN</span>
+                  </div>
+                </div>
+
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center">
                     <CheckCircle className="text-green-500 mr-2" size={16} />
-                    <span className="text-sm">OBD диагностика</span>
+                    <span className="text-sm">Скидка от 3х фильтров: -10%</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="text-green-500 mr-2" size={16} />
-                    <span className="text-sm">Сброс ошибок</span>
+                    <span className="text-sm">Выезд в пределах города</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="text-green-500 mr-2" size={16} />
-                    <span className="text-sm">Принудительная регенерация</span>
+                    <span className="text-sm">Приоритетное обслуживание</span>
                   </li>
                 </ul>
-                <div className="text-2xl font-bold text-primary mb-4" data-testid="price-diagnostics">Бесплатно</div>
-                <Link href="/services">
+
+                <Link href="/contact">
                   <Button 
                     className="w-full"
-                    onClick={() => handleServiceClick('diagnostics')}
-                    data-testid="button-service-diagnostics"
+                    onClick={() => handleServiceClick('commercial_dpf')}
+                    data-testid="button-service-commercial"
                   >
-                    Подробнее
+                    Заказать выезд
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
-            {/* Service Card 3 */}
-            <Card className="service-card border border-border">
+            {/* Fleet Services */}
+            <Card className="service-card border border-border relative">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-green-500/10 rounded-xl flex items-center justify-center mb-6">
-                  <Truck className="text-green-500" size={32} />
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 bg-green-500/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Building2 className="text-green-500" size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Автопарки</h3>
+                  <p className="text-muted-foreground text-sm">Корпоративные клиенты</p>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Обслуживание автопарков</h3>
-                <p className="text-muted-foreground mb-6">
-                  Комплексное обслуживание коммерческого транспорта с выездом к клиенту
-                </p>
+                
+                <div className="space-y-4 mb-6">
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="text-sm">До 10 единиц</span>
+                    <span className="font-semibold text-green-600">-15%</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="text-sm">10-50 единиц</span>
+                    <span className="font-semibold text-green-600">-20%</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-border/50">
+                    <span className="text-sm">Свыше 50 единиц</span>
+                    <span className="font-semibold text-green-600">-25%</span>
+                  </div>
+                </div>
+
                 <ul className="space-y-2 mb-6">
-                  <li className="flex items-center">
-                    <CheckCircle className="text-green-500 mr-2" size={16} />
-                    <span className="text-sm">Выезд на место</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="text-green-500 mr-2" size={16} />
-                    <span className="text-sm">Индивидуальные тарифы</span>
-                  </li>
                   <li className="flex items-center">
                     <CheckCircle className="text-green-500 mr-2" size={16} />
                     <span className="text-sm">Договор обслуживания</span>
                   </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="text-green-500 mr-2" size={16} />
+                    <span className="text-sm">Выезд по Беларуси</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="text-green-500 mr-2" size={16} />
+                    <span className="text-sm">Отсрочка платежа</span>
+                  </li>
                 </ul>
-                <div className="text-2xl font-bold text-primary mb-4" data-testid="price-fleet">По договору</div>
-                <Link href="/services">
+
+                <Link href="/contact">
                   <Button 
                     className="w-full"
-                    onClick={() => handleServiceClick('fleet_service')}
+                    onClick={() => handleServiceClick('fleet_dpf')}
                     data-testid="button-service-fleet"
                   >
-                    Подробнее
+                    Корпоративный договор
                   </Button>
                 </Link>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Additional Services */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <h3 className="text-xl font-bold text-center mb-8">Дополнительные услуги</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-semibold mb-4 flex items-center">
+                  <Wrench className="text-accent mr-2" size={20} />
+                  Диагностика и программирование
+                </h4>
+                <div className="space-y-2">
+                  <div className="flex justify-between">
+                    <span>Компьютерная диагностика</span>
+                    <span className="font-semibold text-green-600">Бесплатно*</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Принудительная регенерация</span>
+                    <span className="font-semibold">80 BYN</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Сброс ошибок DPF</span>
+                    <span className="font-semibold">50 BYN</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-2">* При заказе чистки фильтра</p>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold mb-4 flex items-center">
+                  <MapPin className="text-primary mr-2" size={20} />
+                  Доставка и выезд
+                </h4>
+                <div className="space-y-2">
+                  <div className="flex justify-between">
+                    <span>В пределах Гродно</span>
+                    <span className="font-semibold text-green-600">Бесплатно</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Гродненская область</span>
+                    <span className="font-semibold">2 BYN/км</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>По Беларуси</span>
+                    <span className="font-semibold">договорная</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
