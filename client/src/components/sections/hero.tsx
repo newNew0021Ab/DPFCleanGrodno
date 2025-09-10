@@ -31,7 +31,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
       ></div>
       
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 bg-black/80"></div>
       
       <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
         <div className="w-full max-w-4xl">
