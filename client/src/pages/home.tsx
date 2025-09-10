@@ -384,18 +384,18 @@ export default function Home() {
 
               <div>
                 <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i className="fas fa-shipping-fast text-green-500 text-2xl"></i>
+                  <i className="fas fa-piggy-bank text-green-500 text-2xl"></i>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Бесплатная доставка</h3>
-                <p className="text-muted-foreground">Забираем и доставляем по всей Беларуси бесплатно</p>
+                <h3 className="text-xl font-bold mb-2">Экономия для клиента</h3>
+                <p className="text-muted-foreground">До 5 раз дешевле замены фильтра</p>
               </div>
 
               <div>
                 <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i className="fas fa-certificate text-blue-500 text-2xl"></i>
+                  <i className="fas fa-stopwatch text-blue-500 text-2xl"></i>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Фото-отчет</h3>
-                <p className="text-muted-foreground">Наглядно покажем результат до и после очистки</p>
+                <h3 className="text-xl font-bold mb-2">Срок выполнения</h3>
+                <p className="text-muted-foreground">Очистка за 1 - 2 рабочих дня</p>
               </div>
             </div>
           </div>
