@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calculator, Phone } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
-import heroBackground from "@assets/generated_images/Minimalist_exhaust_pipe_closeup_b3e9bc77.png";
+import heroBackground from "@assets/generated_images/Dark_DPF_filter_closeup_b1cfc320.png";
 
 interface HeroProps {
   title: string;
@@ -32,7 +32,7 @@ export default function Hero({ title, subtitle, showCTA = true, showStats = true
       ></div>
       
       {/* Blue Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/95 via-blue-700/90 to-blue-800/95"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/80 via-blue-700/70 to-blue-800/80"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
